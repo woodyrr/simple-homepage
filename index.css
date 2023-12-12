@@ -1,0 +1,55 @@
+/* h1{
+    font-family: 'Montserrat', sans-serif;
+} */
+.nav-open-btn.active .line:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.nav-open-btn.active .line:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+    
+}
+.nav-open-btn.active .line:nth-child(2) {
+    opacity: 0;
+}
+.line{
+    background-color: black;
+}
+.header-overlay.active{
+    opacity: 1;
+    transition: transform 0.4s ease-out, visibility 0s;
+    display: flex;
+    overflow-y: hidden;
+    
+}
+.header-overlay{
+    transition: transform 0.3s ease-out , visibility 0s;
+}
+@media (min-width: 768px) {
+    .header-overlay.active {
+        display: none;
+    }
+}
+
+.body.dark{
+    background-color: #111729;
+}
+.simple.dark{
+    color: white;
+}
+.actions.dark{
+    color: white;
+}
+.about.dark{
+    color: #FFFFFF;
+}
+.alarado{
+    fill: white;
+}
+.moon.active{
+    background-color: white;
+}
+.sun.active{
+    background-color: transparent;
+}
+/* the element is transposed 300px to the left of where it's supposed to be */
+/* transform: translateX(-100%);  */

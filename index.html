@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Homepage</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body class="p-0 m-0 bg-[#F2F9FE] body overflow-x-hidden">
+    <main class="w-full px-[6%]">
+        <header class="w-full">
+            <div class="hidden md:flex justify-between w-full  py-6 text-[18px]">
+                <div>
+                    <img src="images/alarado-icon-homepage.svg" alt="" srcset="" class="">
+                </div>
+                <div class="flex gap-10 text-[#909193]">
+                    <div class="text-mainColor dark:text-white font-semibold about">About us</div>
+                    <div class="">Product</div>
+                    <div>Resoures</div>
+                    <div>Contact</div>
+                </div>
+                <button class="light flex bg-[#223344] rounded-full p-1" >
+                    <img src="images/Moon_fill.svg" alt="" srcset="" class=" rounded-full moon">
+                    <img src="images/Sun_fill.svg" alt="" srcset="" class="bg-white rounded-full sun">
+                </button>
+            </div>
+            <div class="flex justify-between w-full  py-6 text-[18px] md:hidden">
+                <div class="image">
+                    <img src="images/alarado-icon-homepage.svg" alt="" srcset="">
+                </div>
+                
+                <button class="nav-open-btn flex flex-col  gap-2 z-[9999]">
+                    <span class="line duration-500 w-[25px] h-[2px]"></span>
+                    <span class="line duration-500 w-[25px] h-[2px]"></span>
+                    <span class="line duration-500 w-[25px] h-[2px] "></span>
+                </button>
+                
+            </div>
+            
+        </header>
+
+        <!-- header-overlay start-->
+        <div class="header-overlay fixed overflow-hidden flex flex-col gap-4 text-center top-0 bottom-0 right-0 bg-white w-[65%] pt-20 h-full z-[999] text-[33px]  opacity-0 duration-500 md:hidden">
+            
+            <div class="text-mainColor dark:text-white font-semibold ">About us</div>
+            <div class="">Product</div>
+            <div>Resoures</div>
+            <div>Contact</div>
+            <div class="px-[35%]">
+                <button class="flex bg-[#223344] justify-around rounded-full p-1 " onclick="">
+                    <img src="images/Moon_fill.svg" alt="" srcset="" class="">
+                    <img src="images/Sun_fill.svg" alt="" srcset="" class="bg-white rounded-full">
+                </button>
+            </div>  
+            
+        </div>
+        <!-- header-overlay end-->
+        
+        <section class="py-16 px-[5%] lg:px-0 w-full">
+            <div class="flex flex-col-reverse gap-6 lg:gap-0 lg:flex-row justify-between w-full ">
+                <div class="w-full lg:w-[50%] flex flex-col justify-center gap-6 ">
+                    <div class="simple font-semibold dark:text-white">😎  Simple way to communicate</div>
+                    <h1 class="text-[50px] md:text-[60px]  font-extrabold text-[#111729] dark:text-white actions">Actions for Accessibility in Design</h1>
+                    <div class="text-[18px] text-[#909193] font-semibold">The fastest way to build and deploy websites with resusable components.</div>
+                    <div class="text-[16px] flex gap-6">
+                        <button class="bg-[#2A4DD0] md:px-8 px-6 py-3 rounded-xl text-white ">GET STARTED</button>
+                        <button class="underline text-[#2A4DD0] underline-offset-2 font-semibold">Get live demo</button>
+                    </div>
+                    <div class="flex gap-4 text-[#909193]">
+                        <div class="flex gap-1">
+                            <img src="images/Done_ring_round_fill.svg" alt="" srcset="">
+                            <div>No credit card required</div>
+                        </div>
+                        <div class="flex gap-1">
+                            <img src="images/Done_ring_round_fill.svg" alt="" srcset="">
+                            <div>No software to install</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <img src="images/hero-image-simple-homepage.png" alt="" srcset="" class="w-full  :h-[72%] lg:w-[50%]">
+                
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
